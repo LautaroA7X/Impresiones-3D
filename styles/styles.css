@@ -14,16 +14,22 @@ body{
     background-attachment: fixed;
 }
 
-.header{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
+.navbar{
     background-color: rgb(126, 123, 123);
     border-radius: 20px;
 }
 
-.navbar{
+/* .header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(126, 123, 123);
+    border-radius: 20px;
+} */
+
+/* .navbar{
     display: flex;
     position: fixed;
     top: 2rem;
@@ -34,7 +40,7 @@ body{
     border-radius: 50px;
     background-color: rgb(126, 123, 123);
 
-}
+} */
 
 main{
     display: flex;
@@ -155,7 +161,6 @@ h3{
 .logo{
     height: auto ;
     width: 175px;
-    margin-left: 10px;
 }
     
     .imagen_ilustrativa{
@@ -218,15 +223,15 @@ p{
     main{
         text-align: center;
     }
-    header{
+    /* header{
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    .navbar{
+    } */
+    /* .navbar{
         display: flex;
         align-items: center;
-    }
+    } */
     h1{
         display: none;
     }
@@ -277,20 +282,20 @@ p{
         display:none;
     }
 
-    header{
+    /* header{
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+    } */
 
-    .navbar{
+    /* .navbar{
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 5px;
         border-radius: 20px;
         top: 0;
-    }
+    } */
 
     .navbar a{
         font-size: 1rem;
