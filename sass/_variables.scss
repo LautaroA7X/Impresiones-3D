@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&display=swap');
+
+$fuente-titulo: tektur;
+$fuente: roboto;
+$gris: #1a1a1a;
+$verde: #4cff4c;
+$rojo: #ff0000;
+$negro: #000000;
+$sombra-neon-rojo: 
+0 0 5px $rojo,
+0 0 10px $rojo,
+0 0 20px $rojo;
+$sombra-neon-verde:0 0 5px $verde,
+    0 0 10px $verde,
+    0 0 20px $verde,
+    0 0 40px $verde;
+
+
+body{
+    background-color: #1a1a1a;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}

@@ -1,0 +1,35 @@
+@use "variables" as v;
+
+.titulo-catalogo{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: v.$fuente-titulo;
+    text-shadow: v.$sombra-neon-verde;
+        margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.catalogo-de-productos{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    justify-items: center;
+
+    .card{
+        box-shadow: v.$sombra-neon-rojo;
+    }
+    .card-body{
+        height: 200px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-title{
+        min-height: 48px;
+    }
+    .card-text{
+        min-height: 24px;
+    }
+    }

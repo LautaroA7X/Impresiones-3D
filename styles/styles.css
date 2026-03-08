@@ -1,3 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&display=swap");
+body {
+  background-color: #1a1a1a;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.navbar {
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  justify-content: end;
+  border: 2px solid #ff0000;
+  box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
+}
+
+.nav-link {
+  font-family: tektur;
+  font-size: 1.7rem;
+  color: #4cff4c;
+  text-shadow: 0 0 5px #4cff4c, 0 0 10px #4cff4c, 0 0 20px #4cff4c, 0 0 40px #4cff4c;
+  -webkit-text-stroke: 1px #0a0a0a;
+}
+
+h1 {
+  text-align: center;
+  font-family: tektur;
+  font-size: 5rem;
+  color: #4cff4c;
+  text-shadow: 0 0 5px #4cff4c, 0 0 10px #4cff4c, 0 0 20px #4cff4c, 0 0 40px #4cff4c;
+  -webkit-text-stroke: 1px #0a0a0a;
+}
+
+.logo {
+  height: auto;
+  width: 175px;
+}
+
+@media (min-width: 480px) and (max-width: 960px) {
+  main {
+    text-align: center;
+  }
+  h1 {
+    display: none;
+  }
+  .logo {
+    width: 50%;
+    height: auto;
+  }
+}
+footer {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+footer .derechos-de-autor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+  text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
+  margin-top: 50px;
+}
+footer .redes-sociales {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  list-style: none;
+}
+footer .logo_red_social {
+  height: auto;
+  width: 4rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+main .info {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+main p {
+  color: #000000;
+  font-family: roboto;
+  font-size: 1.7rem;
+  text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
+  margin-top: 50px;
+  white-space: pre-line;
+}
+main .titulo-imagenes-ilustrativas {
+  display: flex;
+  justify-content: center;
+  font-family: tektur;
+  font-size: 3rem;
+  text-shadow: 0 0 5px #4cff4c, 0 0 10px #4cff4c, 0 0 20px #4cff4c, 0 0 40px #4cff4c;
+  -webkit-text-stroke: 1px #0a0a0a;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+main .imagenes-ilustrativas {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+main .imagen_ilustrativa {
+  height: auto;
+  width: 400px;
+  gap: 2rem;
+  box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
+}
+
+.titulo-catalogo {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-family: tektur;
+  text-shadow: 0 0 5px #4cff4c, 0 0 10px #4cff4c, 0 0 20px #4cff4c, 0 0 40px #4cff4c;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.catalogo-de-productos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+.catalogo-de-productos .card {
+  box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
+}
+.catalogo-de-productos .card-body {
+  height: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.catalogo-de-productos .card-title {
+  min-height: 48px;
+}
+.catalogo-de-productos .card-text {
+  min-height: 24px;
+}
+
+.titulo-pedidos {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-family: tektur;
+  text-shadow: 0 0 5px #4cff4c, 0 0 10px #4cff4c, 0 0 20px #4cff4c, 0 0 40px #4cff4c;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.text-ideas {
+  text-align: center;
+}
+
+.ideas {
+  display: flex;
+  text-shadow: 0 0 5px #4cff4c, 0 0 10px #4cff4c, 0 0 20px #4cff4c, 0 0 40px #4cff4c;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.ideas label {
+  font-size: 2rem;
+}
+
+.ideas input {
+  width: 30%;
+  text-align: center;
+}
+
+.ideas textarea {
+  height: 100px;
+  width: 1000px;
+  text-align: center;
+}
+
+.boton-archivo {
+  padding: 10px 20px;
+  background-color: #4cff4c;
+  cursor: pointer;
+  border-color: black;
+  border-style: groove;
+  box-shadow: 0 0 5px #4cff4c, 0 0 10px #4cff4c, 0 0 20px #4cff4c, 0 0 40px #4cff4c;
+  border-radius: 8px;
+}
+
+.ideas button[type=submit] {
+  background-color: #4cff4c;
+  font-size: 50px;
+  padding: 10px 25px;
+  border-color: black;
+  border-style: groove;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 5px #4cff4c, 0 0 10px #4cff4c, 0 0 20px #4cff4c, 0 0 40px #4cff4c;
+  transition: 0.3s;
+}
+
 * {
   margin: 0;
   padding: 0;

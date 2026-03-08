@@ -1,0 +1,57 @@
+@use "variables" as v;
+
+.titulo-pedidos{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: v.$fuente-titulo;
+    text-shadow: v.$sombra-neon-verde;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.text-ideas{
+    text-align: center;
+}
+
+.ideas{
+    display: flex;
+    text-shadow: v.$sombra-neon-verde;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+.ideas label{
+    font-size: 2rem;
+}
+.ideas input{
+    width: 30%;
+    text-align: center;
+}
+
+    .ideas textarea{
+        height: 100px;
+        width: 1000px;
+        text-align: center;
+}
+.boton-archivo{
+    padding: 10px 20px;
+    background-color: v.$verde;
+    cursor: pointer;
+    border-color: black;
+    border-style:groove;
+    box-shadow: v.$sombra-neon-verde;
+    border-radius: 8px;
+}
+.ideas button[type="submit"]{
+    background-color: v.$verde;
+    font-size: 50px;
+    padding: 10px 25px;
+    border-color: black;
+    border-style:groove;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: v.$sombra-neon-verde;
+    transition: 0.3s;
+}

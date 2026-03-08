@@ -15,14 +15,15 @@
                     <a class="navbar-brand" href="../index.html">
                         <img src="../assets/imagenes/impresion 3D.png" alt="logo de pagina impresiones 3D" class="logo">
                     </a>
+                    <h1>IMPRESIONES 3D</h1>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../pages/catalogo.html">Catalogo</a>
@@ -74,18 +75,23 @@
     </header>
 
     <main>
-        <h2>Realiza tu pedido de diseño</h2>
+        <h2 class="titulo-pedidos">REALIZA TU PEDIDO</h2>
 
-        <p>A continuacion envianos tu idea o diseño de lo que te gustaria que realizemos en impresiones 3D.</p>
+        <p class="text-ideas">¿Tenés una idea o necesitás una pieza en impresión 3D? Podés enviarnos tu pedido con una descripción de lo que querés realizar. Cuanta más información nos brindes (medidas, imágenes de referencia, colores, uso de la pieza, etc.), mejor podremos entender tu idea y ofrecerte un resultado más preciso. ¡Contanos qué tenés en mente y lo hacemos realidad!
+        
+        </p>
 
         <form class="ideas">
-            <label>E-mail</label>
-            <input type="email" placeholder="rodrigolizarraga@gmail.com">
+            <label>E-MAIL</label>
+            <input type="email" placeholder="correoimaginario@gmail.com">
 
-            <label>Telefono</label>
+            <label>TELEFONO</label>
             <input type="number" placeholder="1234567890">
 
+            <label>COMENTANOS TU IDEA</label>
             <textarea placeholder="Mandanos tu idea"></textarea>
+            <label for="archivo" class="boton-archivo">Seleccionar archivo</label>
+<input type="file" id="archivo" hidden>
             <button type="submit">Enviar</button>
         </form>
 

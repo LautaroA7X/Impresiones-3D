@@ -1,4 +1,13 @@
 // sass --watch sass/main.scss styles/styles.css
+
+@use "variables";
+@use "header";
+@use "footer";
+@use "index";
+@use "catalogo";
+@use "pedidos";
+@use "contacto";
+@use "tu-cuenta";
 *{
     margin: 0;
     padding: 0;

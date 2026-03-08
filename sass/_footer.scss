@@ -1,0 +1,32 @@
+@use "variables" as v;
+footer{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    .derechos-de-autor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: v.$negro;
+        text-shadow: v.$sombra-neon-rojo;
+        margin-top: 50px;
+    }
+    .redes-sociales{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+        list-style: none;
+        
+    }
+    .logo_red_social{
+        height: auto;
+        width: 4rem;
+        
+    }
+}
