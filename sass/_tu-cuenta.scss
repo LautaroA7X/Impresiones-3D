@@ -1,0 +1,64 @@
+@use "variables" as v;
+
+
+.titulo-datos-de-cuenta{
+        display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: v.$fuente-titulo;
+    text-shadow: v.$sombra-neon-verde;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.tu-cuenta{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center;
+
+    .datos-personales{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    .datos-domicilio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    .datos-persona-autorizada{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+}
+.tu-cuenta h2{
+    font-family: v.$fuente-titulo;
+    text-shadow: v.$sombra-neon-verde;
+    font-size: 2.5rem;
+}
+
+.tu-cuenta label{
+    font-family: v.$fuente-titulo;
+}
+
+.tu-cuenta button{
+    grid-column: 1 / 4;
+    justify-self: center;
+    margin-top: 20px;
+    background-color: v.$verde;
+    font-size: 30px;
+    padding: 10px 25px;
+    border-color: black;
+    border-style:groove;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+

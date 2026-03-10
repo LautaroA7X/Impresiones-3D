@@ -24,12 +24,14 @@
         text-align: center;
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     .card-title{
-        min-height: 48px;
+        min-height: 30px;
     }
     .card-text{
         min-height: 24px;
+        gap: 10px;
     }
     }

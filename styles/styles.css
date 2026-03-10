@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&display=swap");
 body {
-  background-color: #1a1a1a;
+  background-color: white;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -9,7 +9,7 @@ body {
 }
 
 .navbar {
-  background-color: #1a1a1a;
+  background-color: #b4b2b2;
   border-radius: 20px;
   justify-content: end;
   border: 2px solid #ff0000;
@@ -144,12 +144,14 @@ main .imagen_ilustrativa {
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .catalogo-de-productos .card-title {
-  min-height: 48px;
+  min-height: 30px;
 }
 .catalogo-de-productos .card-text {
   min-height: 24px;
+  gap: 10px;
 }
 
 .titulo-pedidos {
@@ -168,6 +170,7 @@ main .imagen_ilustrativa {
 
 .ideas {
   display: flex;
+  font-family: tektur;
   text-shadow: 0 0 5px #4cff4c, 0 0 10px #4cff4c, 0 0 20px #4cff4c, 0 0 40px #4cff4c;
   flex-direction: column;
   align-items: center;
@@ -176,6 +179,7 @@ main .imagen_ilustrativa {
 }
 
 .ideas label {
+  font-family: roboto;
   font-size: 2rem;
 }
 
@@ -196,19 +200,171 @@ main .imagen_ilustrativa {
   cursor: pointer;
   border-color: black;
   border-style: groove;
-  box-shadow: 0 0 5px #4cff4c, 0 0 10px #4cff4c, 0 0 20px #4cff4c, 0 0 40px #4cff4c;
   border-radius: 8px;
 }
 
 .ideas button[type=submit] {
   background-color: #4cff4c;
-  font-size: 50px;
+  font-size: 30px;
   padding: 10px 25px;
   border-color: black;
   border-style: groove;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 0 5px #4cff4c, 0 0 10px #4cff4c, 0 0 20px #4cff4c, 0 0 40px #4cff4c;
+  transition: 0.3s;
+}
+
+.titulo-contacto {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-family: tektur;
+  text-shadow: 0 0 5px #4cff4c, 0 0 10px #4cff4c, 0 0 20px #4cff4c, 0 0 40px #4cff4c;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.text-contacto {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contenedor-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 400px;
+  width: 100%;
+}
+
+.mapa {
+  margin-right: 2rem;
+  font-family: tektur;
+  text-shadow: 0 0 5px #4cff4c, 0 0 10px #4cff4c, 0 0 20px #4cff4c, 0 0 40px #4cff4c;
+}
+
+.mapa iframe {
+  width: 600px;
+  height: 450px;
+}
+
+.horarios-contacto {
+  margin-top: 1rem;
+}
+
+.horarios-contacto h3 {
+  margin-bottom: 0.5rem;
+}
+
+.horarios-contacto p {
+  margin: 0;
+}
+
+form h2 {
+  font-family: tektur;
+  text-shadow: 0 0 5px #4cff4c, 0 0 10px #4cff4c, 0 0 20px #4cff4c, 0 0 40px #4cff4c;
+}
+
+.informacion-contacto {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  gap: 1rem;
+  margin-left: 2rem;
+  width: 400px;
+}
+
+.informacion-contacto input {
+  width: 100%;
+}
+
+.informacion-contacto textarea {
+  width: 100%;
+  height: 120%;
+}
+
+.informacion-contacto label {
+  font-family: tektur;
+}
+
+.informacion-contacto [type=submit] {
+  background-color: #4cff4c;
+  font-size: 30px;
+  padding: 10px 25px;
+  border-color: black;
+  border-style: groove;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.informacion-contacto [type=reset] {
+  background-color: #4cff4c;
+  font-size: 30px;
+  padding: 10px 25px;
+  border-color: black;
+  border-style: groove;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.titulo-datos-de-cuenta {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-family: tektur;
+  text-shadow: 0 0 5px #4cff4c, 0 0 10px #4cff4c, 0 0 20px #4cff4c, 0 0 40px #4cff4c;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.tu-cuenta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-items: center;
+}
+.tu-cuenta .datos-personales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.tu-cuenta .datos-domicilio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.tu-cuenta .datos-persona-autorizada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.tu-cuenta h2 {
+  font-family: tektur;
+  text-shadow: 0 0 5px #4cff4c, 0 0 10px #4cff4c, 0 0 20px #4cff4c, 0 0 40px #4cff4c;
+  font-size: 2.5rem;
+}
+
+.tu-cuenta label {
+  font-family: tektur;
+}
+
+.tu-cuenta button {
+  grid-column: 1/4;
+  justify-self: center;
+  margin-top: 20px;
+  background-color: #4cff4c;
+  font-size: 30px;
+  padding: 10px 25px;
+  border-color: black;
+  border-style: groove;
+  border-radius: 8px;
+  cursor: pointer;
   transition: 0.3s;
 }
 
