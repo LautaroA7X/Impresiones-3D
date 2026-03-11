@@ -13,7 +13,7 @@
 .catalogo-de-productos{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 2rem;
+    gap: 32px;
     justify-items: center;
 
     .card{
@@ -34,4 +34,22 @@
         min-height: 24px;
         gap: 10px;
     }
+    }
+
+    @include v.mobile{
+        .catalogo-de-productos{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 32px;
+            justify-items: center;
+        }
+    }
+
+    @include v.tablet{
+        .catalogo-de-productos{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+            justify-items: center;
+        }
     }

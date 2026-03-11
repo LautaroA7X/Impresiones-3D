@@ -1,32 +1,69 @@
 @use "variables" as v;
+
 footer{
     position: relative;
     padding: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: end;
-
     .derechos-de-autor{
         display: flex;
         flex-direction: column;
         align-items: center;
         color: v.$negro;
         text-shadow: v.$sombra-neon-rojo;
-        margin-top: 50px;
+        font-size: 30px;
     }
     .redes-sociales{
         display: flex;
         flex-direction: row;
-        gap: 1rem;
-        position: absolute;
-        right: 20px;
-        bottom: 10px;
+        gap: 16px;
         list-style: none;
-        
     }
-    .logo_red_social{
-        height: auto;
-        width: 4rem;
-        
+        .logo_red_social{
+            height: auto;
+            width: 60px;
+            margin-top: 50px;
+        }
+
+    // TABLET
+    @include v.tablet{
+        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        .derechos-de-autor{
+            margin-top: 50px;
+            margin-bottom: 0px;
+        }
+        .redes-sociales{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        }
+
+
+
+    // MOBILE
+    @include v.mobile{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+
+        .redes-sociales{
+        order: 1;
+        margin-bottom: 0;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .derechos-de-autor{
+        order: 2;
+        margin-top: 0;
+        align-items: center;
+    }
     }
 }

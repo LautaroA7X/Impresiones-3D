@@ -25,7 +25,7 @@
 h1{
     text-align: center;
     font-family: v.$fuente-titulo;
-    font-size: 5rem;
+    font-size: 4rem;
     color: v.$verde;
     text-shadow:
     0 0 5px v.$verde,
@@ -33,6 +33,13 @@ h1{
     0 0 20px v.$verde,
     0 0 40px v.$verde;
     -webkit-text-stroke: 1px #0a0a0a;
+
+    @include v.tablet{
+        font-size: 4rem;
+    }
+    @include v.mobile{
+        display:none;
+    }
 }
 
 
@@ -40,21 +47,3 @@ h1{
     height: auto ;
     width: 175px;
 }
-
-
-// MEDIA QUERIS
-
-// TABLET
-
-@media (min-width: 480px) and (max-width:960px){
-    main{
-        text-align: center;
-    }
-    h1{
-        display: none;
-    }
-    .logo{
-    width: 50%;
-    height: auto;
-    }
-    }

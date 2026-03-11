@@ -55,3 +55,37 @@
     cursor: pointer;
     transition: 0.3s;
 }
+
+@include v.tablet{
+        .titulo-pedidos{
+            text-align: center;
+            }
+
+        .ideas input{
+            width: 50%;
+            text-align: center;
+            }
+
+        .ideas textarea{
+            height: 250px;
+            width: 50%;
+            text-align: center;
+            }
+    }
+
+@include v.mobile{
+        .titulo-pedidos{
+            text-align: center;
+            }
+
+        .ideas input{
+            width: 80%;
+            text-align: center;
+            }
+
+        .ideas textarea{
+            height: 250px;
+            width: 80%;
+            text-align: center;
+            }
+    }

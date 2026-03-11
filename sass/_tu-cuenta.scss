@@ -62,3 +62,30 @@
     transition: 0.3s;
 }
 
+@include v.tablet{
+    .tu-cuenta{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 48px;
+    }
+    .tu-cuenta button {
+        grid-column: 1 / -1;
+    }
+    .datos-persona-autorizada{
+        grid-column: 1 / -1;
+    }
+}
+
+@include v.mobile{
+    .tu-cuenta{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 48px;
+    }
+    .tu-cuenta button {
+        grid-column: 1 / -1;
+    }
+    .datos-persona-autorizada{
+        grid-column: 1 / -1;
+    }
+}

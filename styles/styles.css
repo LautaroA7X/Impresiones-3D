@@ -27,10 +27,20 @@ body {
 h1 {
   text-align: center;
   font-family: tektur;
-  font-size: 5rem;
+  font-size: 4rem;
   color: #4cff4c;
   text-shadow: 0 0 5px #4cff4c, 0 0 10px #4cff4c, 0 0 20px #4cff4c, 0 0 40px #4cff4c;
   -webkit-text-stroke: 1px #0a0a0a;
+}
+@media (min-width: 480px) and (max-width: 960px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 479px) {
+  h1 {
+    display: none;
+  }
 }
 
 .logo {
@@ -38,23 +48,11 @@ h1 {
   width: 175px;
 }
 
-@media (min-width: 480px) and (max-width: 960px) {
-  main {
-    text-align: center;
-  }
-  h1 {
-    display: none;
-  }
-  .logo {
-    width: 50%;
-    height: auto;
-  }
-}
 footer {
   position: relative;
   padding: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: end;
 }
 footer .derechos-de-autor {
@@ -63,20 +61,54 @@ footer .derechos-de-autor {
   align-items: center;
   color: #000000;
   text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
-  margin-top: 50px;
+  font-size: 30px;
 }
 footer .redes-sociales {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
-  position: absolute;
-  right: 20px;
-  bottom: 10px;
+  gap: 16px;
   list-style: none;
 }
 footer .logo_red_social {
   height: auto;
-  width: 4rem;
+  width: 60px;
+  margin-top: 50px;
+}
+@media (min-width: 480px) and (max-width: 960px) {
+  footer {
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  footer .derechos-de-autor {
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+  footer .redes-sociales {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 300px) and (max-width: 479px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  footer .redes-sociales {
+    order: 1;
+    margin-bottom: 0;
+    justify-content: center;
+    padding-left: 0;
+  }
+  footer .derechos-de-autor {
+    order: 2;
+    margin-top: 0;
+    align-items: center;
+  }
 }
 
 main {
@@ -90,34 +122,55 @@ main .info {
   padding: 1rem;
 }
 main p {
+  text-align: center;
   color: #000000;
   font-family: roboto;
-  font-size: 1.7rem;
+  font-size: 30px;
   text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
   margin-top: 50px;
   white-space: pre-line;
+}
+@media (min-width: 480px) and (max-width: 960px) {
+  main p {
+    text-align: center;
+  }
+}
+@media (min-width: 300px) and (max-width: 479px) {
+  main p {
+    text-align: center;
+  }
 }
 main .titulo-imagenes-ilustrativas {
   display: flex;
   justify-content: center;
   font-family: tektur;
-  font-size: 3rem;
+  font-size: 50px;
   text-shadow: 0 0 5px #4cff4c, 0 0 10px #4cff4c, 0 0 20px #4cff4c, 0 0 40px #4cff4c;
   -webkit-text-stroke: 1px #0a0a0a;
   margin-top: 40px;
   margin-bottom: 40px;
 }
+@media (min-width: 300px) and (max-width: 479px) {
+  main .titulo-imagenes-ilustrativas {
+    text-align: center;
+  }
+}
 main .imagenes-ilustrativas {
   display: flex;
   flex-flow: row wrap;
-  gap: 3rem;
+  gap: 2rem;
   justify-content: center;
 }
-main .imagen_ilustrativa {
+main .imagenes-ilustrativas .imagen_ilustrativa {
   height: auto;
-  width: 400px;
-  gap: 2rem;
+  width: 300px;
   box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
+}
+@media (min-width: 300px) and (max-width: 479px) {
+  main .imagenes-ilustrativas .imagen_ilustrativa {
+    height: auto;
+    width: 150px;
+  }
 }
 
 .titulo-catalogo {
@@ -133,7 +186,7 @@ main .imagen_ilustrativa {
 .catalogo-de-productos {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 2rem;
+  gap: 32px;
   justify-items: center;
 }
 .catalogo-de-productos .card {
@@ -154,6 +207,22 @@ main .imagen_ilustrativa {
   gap: 10px;
 }
 
+@media (min-width: 300px) and (max-width: 479px) {
+  .catalogo-de-productos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+    justify-items: center;
+  }
+}
+@media (min-width: 480px) and (max-width: 960px) {
+  .catalogo-de-productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    justify-items: center;
+  }
+}
 .titulo-pedidos {
   display: flex;
   justify-content: center;
@@ -214,10 +283,38 @@ main .imagen_ilustrativa {
   transition: 0.3s;
 }
 
+@media (min-width: 480px) and (max-width: 960px) {
+  .titulo-pedidos {
+    text-align: center;
+  }
+  .ideas input {
+    width: 50%;
+    text-align: center;
+  }
+  .ideas textarea {
+    height: 250px;
+    width: 50%;
+    text-align: center;
+  }
+}
+@media (min-width: 300px) and (max-width: 479px) {
+  .titulo-pedidos {
+    text-align: center;
+  }
+  .ideas input {
+    width: 80%;
+    text-align: center;
+  }
+  .ideas textarea {
+    height: 250px;
+    width: 80%;
+    text-align: center;
+  }
+}
 .titulo-contacto {
   display: flex;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 48px;
   font-family: tektur;
   text-shadow: 0 0 5px #4cff4c, 0 0 10px #4cff4c, 0 0 20px #4cff4c, 0 0 40px #4cff4c;
   margin-top: 30px;
@@ -238,7 +335,7 @@ main .imagen_ilustrativa {
 }
 
 .mapa {
-  margin-right: 2rem;
+  margin-right: 32px;
   font-family: tektur;
   text-shadow: 0 0 5px #4cff4c, 0 0 10px #4cff4c, 0 0 20px #4cff4c, 0 0 40px #4cff4c;
 }
@@ -249,15 +346,17 @@ main .imagen_ilustrativa {
 }
 
 .horarios-contacto {
-  margin-top: 1rem;
+  margin-top: 16px;
 }
 
 .horarios-contacto h3 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
 }
 
 .horarios-contacto p {
   margin: 0;
+  text-align: start;
+  font-size: 30px;
 }
 
 form h2 {
@@ -268,9 +367,9 @@ form h2 {
 .informacion-contacto {
   display: flex;
   flex-direction: column;
-  font-size: 1.5rem;
-  gap: 1rem;
-  margin-left: 2rem;
+  font-size: 24px;
+  gap: 16px;
+  margin-left: 32px;
   width: 400px;
 }
 
@@ -309,6 +408,31 @@ form h2 {
   transition: 0.3s;
 }
 
+@media (min-width: 480px) and (max-width: 960px) {
+  .contenedor-contacto {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+  .contenedor-contacto .informacion-contacto {
+    align-items: center;
+    max-width: 400px;
+    width: 90%;
+  }
+  .contenedor-contacto .mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 0;
+  }
+  .contenedor-contacto .mapa iframe {
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+  }
+}
 .titulo-datos-de-cuenta {
   display: flex;
   justify-content: center;
@@ -368,6 +492,32 @@ form h2 {
   transition: 0.3s;
 }
 
+@media (min-width: 480px) and (max-width: 960px) {
+  .tu-cuenta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+  }
+  .tu-cuenta button {
+    grid-column: 1/-1;
+  }
+  .datos-persona-autorizada {
+    grid-column: 1/-1;
+  }
+}
+@media (min-width: 300px) and (max-width: 479px) {
+  .tu-cuenta {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 48px;
+  }
+  .tu-cuenta button {
+    grid-column: 1/-1;
+  }
+  .datos-persona-autorizada {
+    grid-column: 1/-1;
+  }
+}
 * {
   margin: 0;
   padding: 0;
