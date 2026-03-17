@@ -1,5 +1,4 @@
-poner fija la navbar
-falta configurar el resposive de contacto
+mejorar el anidamiento de sass
 
 
 
@@ -8,7 +7,7 @@ falta configurar el resposive de contacto
 
 PAGINAS CON RESPONSIVE:
 catalogo✔️
-contacto
+contacto✔️
 pedidos✔️
 tu cuenta✔️
 index ✔️

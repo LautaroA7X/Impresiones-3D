@@ -47,10 +47,15 @@ main{
                 height: auto;
                 width: 300px;
                 box-shadow: v.$sombra-neon-rojo;
+                transition: 2s all;
+                &:hover{
+                    scale: 1.25;
+                }
                 @include v.mobile{
                     height: auto;
                     width: 150px;
-                }
             }
             }
+    }
+    
     }
