@@ -11,7 +11,11 @@
 }
 
 .text-ideas{
-    text-align: center;
+text-align: center;
+        color: v.$negro;
+        font-family: v.$fuente;
+        font-size: 30px;
+        text-shadow: v.$sombra-neon-rojo;
 }
 
 .ideas{

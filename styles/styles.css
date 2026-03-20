@@ -250,6 +250,10 @@ main .imagenes-ilustrativas .imagen_ilustrativa:hover {
 
 .text-ideas {
   text-align: center;
+  color: #000000;
+  font-family: roboto;
+  font-size: 30px;
+  text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
 }
 
 .ideas {
@@ -333,7 +337,10 @@ main .imagenes-ilustrativas .imagen_ilustrativa:hover {
 
 .text-contacto {
   text-align: center;
-  margin-bottom: 50px;
+  color: #000000;
+  font-family: roboto;
+  font-size: 30px;
+  text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
 }
 
 .contenedor-contacto {
@@ -407,6 +414,8 @@ main .imagenes-ilustrativas .imagen_ilustrativa:hover {
   margin: 0;
   text-align: center;
   font-size: 30px;
+  white-space: pre-line;
+  text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
 }
 
 @media (min-width: 480px) and (max-width: 960px) {
