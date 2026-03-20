@@ -201,6 +201,7 @@ main .imagenes-ilustrativas .imagen_ilustrativa:hover {
   text-align: center;
   display: flex;
   flex-direction: column;
+  font-family: roboto;
 }
 .catalogo-de-productos .card .btn {
   margin-top: auto;
@@ -229,6 +230,9 @@ main .imagenes-ilustrativas .imagen_ilustrativa:hover {
     gap: 32px;
     justify-items: center;
   }
+  .card-text {
+    font-size: 1.5rem;
+  }
 }
 @media (min-width: 480px) and (max-width: 960px) {
   .catalogo-de-productos {
@@ -236,6 +240,9 @@ main .imagenes-ilustrativas .imagen_ilustrativa:hover {
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
     justify-items: center;
+  }
+  .card-text {
+    font-size: 1.5rem;
   }
 }
 .titulo-pedidos {
@@ -302,13 +309,15 @@ main .imagenes-ilustrativas .imagen_ilustrativa:hover {
     text-align: center;
   }
   .ideas input {
-    width: 50%;
+    width: 600px;
     text-align: center;
+    font-size: 1.75rem;
   }
   .ideas textarea {
     height: 250px;
-    width: 50%;
+    width: 600px;
     text-align: center;
+    font-size: 1.75rem;
   }
 }
 @media (min-width: 300px) and (max-width: 479px) {
@@ -316,13 +325,15 @@ main .imagenes-ilustrativas .imagen_ilustrativa:hover {
     text-align: center;
   }
   .ideas input {
-    width: 80%;
+    width: 400px;
     text-align: center;
+    font-size: 1.25rem;
   }
   .ideas textarea {
     height: 250px;
-    width: 80%;
+    width: 400px;
     text-align: center;
+    font-size: 1.25rem;
   }
 }
 .titulo-contacto {
@@ -426,8 +437,17 @@ main .imagenes-ilustrativas .imagen_ilustrativa:hover {
   }
   .contenedor-contacto .informacion-contacto {
     align-items: center;
-    max-width: 400px;
-    width: 90%;
+  }
+  .contenedor-contacto .informacion-contacto input {
+    width: 600px;
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  .contenedor-contacto .informacion-contacto textarea {
+    text-align: center;
+    width: 600px;
+    height: 400px;
+    font-size: 1.75rem;
   }
   .contenedor-contacto .mapa {
     display: flex;
@@ -449,17 +469,19 @@ main .imagenes-ilustrativas .imagen_ilustrativa:hover {
     align-items: center;
     gap: 32px;
   }
-  .informacion-contacto {
+  .contenedor-contacto .informacion-contacto {
     margin-left: 0;
   }
-  .informacion-contacto input {
+  .contenedor-contacto .informacion-contacto input {
     width: 100%;
+    font-size: 1.25rem;
   }
-  .informacion-contacto textarea {
+  .contenedor-contacto .informacion-contacto textarea {
     width: 100%;
     height: 400px;
+    font-size: 1.25rem;
   }
-  .horarios-contacto p {
+  .contenedor-contacto .horarios-contacto p {
     text-align: center;
     font-size: 25px;
   }
@@ -539,8 +561,20 @@ main .imagenes-ilustrativas .imagen_ilustrativa:hover {
 @media (min-width: 480px) and (max-width: 960px) {
   .tu-cuenta {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 48px;
+  }
+  .datos-personales input {
+    width: 600px;
+    font-size: 1.75rem;
+  }
+  .datos-domicilio input {
+    width: 600px;
+    font-size: 1.75rem;
+  }
+  .datos-persona-autorizada input {
+    width: 600px;
+    font-size: 1.75rem;
   }
   .tu-cuenta button {
     grid-column: 1/-1;
@@ -554,6 +588,18 @@ main .imagenes-ilustrativas .imagen_ilustrativa:hover {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 48px;
+  }
+  .tu-cuenta .datos-personales input {
+    width: 400px;
+    font-size: 1.25rem;
+  }
+  .tu-cuenta .datos-domicilio input {
+    width: 400px;
+    font-size: 1.25rem;
+  }
+  .tu-cuenta .datos-persona-autorizada input {
+    width: 400px;
+    font-size: 1.25rem;
   }
   .tu-cuenta button {
     grid-column: 1/-1;

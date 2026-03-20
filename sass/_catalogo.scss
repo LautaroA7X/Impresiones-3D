@@ -23,6 +23,7 @@
             text-align: center;
             display: flex;
             flex-direction: column;
+            font-family: v.$fuente;
             }
             
         .btn{
@@ -55,6 +56,9 @@
             gap: 32px;
             justify-items: center;
         }
+        .card-text{
+            font-size: 1.5rem;
+        }
     }
 
     @include v.tablet{
@@ -63,5 +67,8 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 32px;
             justify-items: center;
+        }
+        .card-text{
+            font-size: 1.5rem;
         }
     }

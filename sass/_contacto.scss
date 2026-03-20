@@ -113,8 +113,19 @@
             
             .informacion-contacto {
                 align-items: center;
-                max-width: 400px;
-                width: 90%;
+                input{
+                    width: 600px;
+                    font-size: 1.75rem;
+                    text-align: center;
+                }
+            }
+            .informacion-contacto{
+                textarea{
+                    text-align: center;
+                    width: 600px;
+                    height: 400px;
+                    font-size: 1.75rem;
+                }
             }
 
         .mapa {
@@ -139,20 +150,22 @@
         flex-direction: column;
         align-items: center;
         gap: 32px;
-    }
-    .informacion-contacto{
-        margin-left: 0;
-    }
-    .informacion-contacto input{
-        width: 100%;
-    }
-    .informacion-contacto textarea{
-        width: 100%;
-        height: 400px;
-    }
-    .horarios-contacto p{
-        text-align: center;
-        font-size: 25px;
+        .informacion-contacto{
+            margin-left: 0;
+        }
+        .informacion-contacto input{
+            width: 100%;
+            font-size: 1.25rem;
+        }
+        .informacion-contacto textarea{
+            width: 100%;
+            height: 400px;
+            font-size: 1.25rem;
+        }
+        .horarios-contacto p{
+            text-align: center;
+            font-size: 25px;
+        }
     }
     .mapa {
         display: flex;;
