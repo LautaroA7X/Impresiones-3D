@@ -18,28 +18,31 @@
 
     .card{
         box-shadow: v.$sombra-neon-rojo;
-    }
-    .card-body{
-        height: 200px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-
+        .card-body{
+            height: 200px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            }
+            
         .btn{
             margin-top: auto;
+            background-color: v.$verde;
+            border: 1px;
+            border-style :groove;
+            
+            }
+            .card-title{
+                min-height: 40px;
+            }
+            .card-text{
+                min-height: 24px;
+                gap: 10px;
+                margin-top: auto;
+                margin-bottom: 12px;
+                text-shadow: none;
+            }
         }
-    }
-
-
-    .card-title{
-        min-height: 40px;
-    }
-    .card-text{
-        min-height: 24px;
-        gap: 10px;
-        margin-top: auto;
-        margin-bottom: 12px;
-    }
     }
 
     @include v.mobile{

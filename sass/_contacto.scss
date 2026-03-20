@@ -22,92 +22,94 @@
     gap: 400px;
     width: 100%;
     
-}
-
-.mapa {
-    margin-right: 32px;
-    font-family: v.$fuente-titulo;
-    text-shadow: v.$sombra-neon-verde;
-}
-.mapa iframe{
-    width: 600px;
-    height: 450px;
-}
-
-.horarios-contacto{
-    margin-top: 16px;
-}
-
-.horarios-contacto h3{
-    margin-bottom: 8px;
-}
-
-.horarios-contacto p{
-    margin: 0;
-    text-align: start;
-    font-size: 30px;
-}
-
-form h2{
-    font-family: v.$fuente-titulo;
-    text-shadow: v.$sombra-neon-verde;
-}
-
-.informacion-contacto{
-    display: flex;
-    flex-direction: column;
-    font-size: 24px;
-    gap: 16px;
-    margin-left: 32px;
-    width: 400px;
-}
-
-.informacion-contacto input{
-    width: 100%;
-}
-
-.informacion-contacto textarea{
-    width: 100%;
-    height: 120%;
-}
-
-.informacion-contacto label{
-    font-family: v.$fuente-titulo;
-}
-
-
-.informacion-contacto [type="submit"]{
-    background-color: v.$verde;
-    font-size: 30px;
-    padding: 10px 25px;
-    border-color: black;
-    border-style:groove;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.informacion-contacto [type="reset"]{
-    background-color: v.$verde;
-    font-size: 30px;
-    padding: 10px 25px;
-    border-color: black;
-    border-style:groove;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-@include v.tablet {
-    .contenedor-contacto {
+    .informacion-contacto{
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 48px;
-
-        .informacion-contacto {
-            align-items: center;
-            max-width: 400px;
-            width: 90%;
+        font-size: 24px;
+        gap: 16px;
+        margin-left: 32px;
+        width: 400px;
+        
+        h2{
+            font-family: v.$fuente-titulo;
+            text-shadow: v.$sombra-neon-verde;
+            text-align: center;
         }
+        input{
+            width: 100%;
+        }
+        
+        textarea{
+            width: 100%;
+            height: 120%;
+        }
+        
+        label{
+            font-family: v.$fuente-titulo;
+        }
+        
+        
+        [type="submit"]{
+            background-color: v.$verde;
+            font-size: 30px;
+            padding: 10px 25px;
+            border-color: black;
+            border-style:groove;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        [type="reset"]{
+            background-color: v.$verde;
+            font-size: 30px;
+            padding: 10px 25px;
+            border-color: black;
+            border-style:groove;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+    }
+    
+}
+    
+    .mapa{
+        margin-right: 32px;
+        font-family: v.$fuente-titulo;
+        text-shadow: v.$sombra-neon-verde;
+        text-align: center;
+        iframe{
+            width: 600px;
+            height: 450px;
+        }
+        .horarios-contacto{
+            margin-top: 16px;
+        }
+        h3{
+            margin-bottom: 8px;
+        }
+        
+        p{
+            margin: 0;
+            text-align: center;
+            font-size: 30px;
+        }
+    }
+    
+    
+    
+
+    @include v.tablet {
+        .contenedor-contacto {
+            flex-direction: column;
+            align-items: center;
+            gap: 48px;
+            
+            .informacion-contacto {
+                align-items: center;
+                max-width: 400px;
+                width: 90%;
+            }
 
         .mapa {
             display: flex;

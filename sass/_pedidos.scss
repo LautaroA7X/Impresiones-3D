@@ -22,38 +22,39 @@
     align-items: center;
     text-align: center;
     gap: 1rem;
-}
-.ideas label{
-    font-family: v.$fuente;
-    font-size: 2rem;
-}
-.ideas input{
-    width: 30%;
-    text-align: center;
-}
 
-    .ideas textarea{
+    label{
+        font-family: v.$fuente;
+        font-size: 2rem;
+    }
+    input{
+        width: 30%;
+        text-align: center;
+    }
+    
+    textarea{
         height: 100px;
         width: 1000px;
         text-align: center;
-}
-.boton-archivo{
-    padding: 10px 20px;
-    background-color: v.$verde;
-    cursor: pointer;
-    border-color: black;
-    border-style:groove;
-    border-radius: 8px;
-}
-.ideas button[type="submit"]{
-    background-color: v.$verde;
-    font-size: 30px;
-    padding: 10px 25px;
-    border-color: black;
-    border-style:groove;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
+    }
+    .boton-archivo{
+        padding: 10px 20px;
+        background-color: v.$verde;
+        cursor: pointer;
+        border-color: black;
+        border-style:groove;
+        border-radius: 8px;
+    }
+    button[type="submit"]{
+        background-color: v.$verde;
+        font-size: 30px;
+        padding: 10px 25px;
+        border-color: black;
+        border-style:groove;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
 }
 
 @include v.tablet{

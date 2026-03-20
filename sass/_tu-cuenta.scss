@@ -2,7 +2,7 @@
 
 
 .titulo-datos-de-cuenta{
-        display: flex;
+    display: flex;
     justify-content: center;
     font-size: 3rem;
     font-family: v.$fuente-titulo;
@@ -16,21 +16,24 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     justify-items: center;
-
+    
+    h2{
+        font-family: v.$fuente-titulo;
+        text-shadow: v.$sombra-neon-verde;
+        font-size: 2.5rem;
+    }
     .datos-personales{
         display: flex;
         flex-direction: column;
         align-items: center;
         font-size: 1.5rem;
     }
-
     .datos-domicilio{
         display: flex;
         flex-direction: column;
         align-items: center;
         font-size: 1.5rem;
     }
-
     .datos-persona-autorizada{
         display: flex;
         flex-direction: column;
@@ -38,12 +41,6 @@
         font-size: 1.5rem;
     }
 }
-.tu-cuenta h2{
-    font-family: v.$fuente-titulo;
-    text-shadow: v.$sombra-neon-verde;
-    font-size: 2.5rem;
-}
-
 .tu-cuenta label{
     font-family: v.$fuente-titulo;
 }
@@ -61,7 +58,6 @@
     cursor: pointer;
     transition: 0.3s;
 }
-
 @include v.tablet{
     .tu-cuenta{
         display: grid;

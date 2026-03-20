@@ -9,20 +9,20 @@ main{
         display: flex;
         justify-content: center;
         padding: 1rem;
-    }
-    p{
-        text-align: center;
-        color: v.$negro;
-        font-family: v.$fuente;
-        font-size: 30px;
-        text-shadow: v.$sombra-neon-rojo;
-        margin-top: 50px;
-        white-space: pre-line;
-        @include v.tablet{
+        p{
             text-align: center;
-        }
-        @include v.mobile{
-            text-align: center;
+            color: v.$negro;
+            font-family: v.$fuente;
+            font-size: 30px;
+            text-shadow: v.$sombra-neon-rojo;
+            margin-top: 50px;
+            white-space: pre-line;
+            @include v.tablet{
+                text-align: center;
+            }
+            @include v.mobile{
+                text-align: center;
+            }
         }
     }
     .titulo-imagenes-ilustrativas{
@@ -56,6 +56,6 @@ main{
                     width: 150px;
             }
             }
-    }
+        }
     
     }
