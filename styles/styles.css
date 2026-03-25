@@ -218,6 +218,7 @@ main .imagenes-ilustrativas .imagen_ilustrativa:hover {
   margin-top: auto;
   margin-bottom: 12px;
   text-shadow: none;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 300px) and (max-width: 479px) {
